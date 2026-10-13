@@ -1,5 +1,6 @@
 function g takes nothing returns nothing
+    local groupWidget w = null
     call f()
-    call sharedNative(null)
-    set sharedValue = 1
+    call sharedNative(w)
+    set sharedValue = groupValue
 endfunction
